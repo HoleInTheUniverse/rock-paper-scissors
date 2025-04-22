@@ -79,4 +79,10 @@ function playGame() {
     }
 }
 
-playGame();
+const startButton = document.querySelector("#start");
+const rockButton = document.querySelector("#rock");
+const paperButton = document.querySelector("#paper");
+const scissorsButton = document.querySelector("#scissors");
+const scoreField = document.querySelector("#score");
+
+startButton.addEventListener("click", playGame);
